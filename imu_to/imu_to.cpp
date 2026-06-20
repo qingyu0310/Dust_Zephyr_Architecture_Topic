@@ -11,6 +11,8 @@
 
 #include "imu_to.hpp"
 
+#pragma message "Compiling Topic/Imu_to"
+
 ZBUS_CHAN_DEFINE(pub_imu_to,
                  topic::imu_to::Message,
                  NULL,

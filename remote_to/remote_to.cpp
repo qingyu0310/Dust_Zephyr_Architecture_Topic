@@ -12,6 +12,8 @@
 #include <zephyr/zbus/zbus.h>
 #include "remote_to.hpp"
 
+#pragma message "Compiling Topic/Remote_to"
+
 ZBUS_CHAN_DEFINE(pub_remote_to,
                  topic::remote_to::Message,
                  NULL,

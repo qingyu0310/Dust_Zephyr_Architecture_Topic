@@ -23,7 +23,4 @@ struct Message {
     uint8_t  data[8];
 };
 
-constexpr auto *chassis = &user_can1_msgq;    // 底盘 CAN（换总线只改这里）
-constexpr auto *gimbal  = &user_can1_msgq;    // 云台 CAN
-
 } // namespace topic::to_can_tx

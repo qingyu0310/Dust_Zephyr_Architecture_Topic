@@ -30,8 +30,8 @@ enum class StartMode : uint8_t
 
 struct Channel
 {
-    float chassisx  = 0.0f, chassisy  = 0.0f;
-    float pitch = 0.0f, yaw = 0.0f;
+    float chassisx = 0.0f, chassisy = 0.0f;
+    float pitch    = 0.0f, yaw      = 0.0f;
 };
 
 struct Message 
@@ -45,12 +45,12 @@ struct Message
     float pitch    = 0.0f;
 
     /* 模式标志 */
-    ChassisMode chassis_mode = ChassisMode::Normal;
+    ChassisMode chassis_mode    = ChassisMode::Normal;
 
-    StartMode shoot_ctrl     = StartMode::Off;
-    StartMode reload_ctrl    = StartMode::Off;
-    StartMode autoaim_ctrl   = StartMode::Off;
-    StartMode supercap_ctrl  = StartMode::Off;
+    StartMode   shoot_ctrl      = StartMode::Off;
+    StartMode   reload_ctrl     = StartMode::Off;
+    StartMode   autoaim_ctrl    = StartMode::Off;
+    StartMode   supercap_ctrl   = StartMode::Off;
 };
 
 }

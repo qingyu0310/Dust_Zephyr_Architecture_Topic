@@ -51,6 +51,7 @@ struct Message
     StartMode   reload_ctrl     = StartMode::Off;
     StartMode   autoaim_ctrl    = StartMode::Off;
     StartMode   supercap_ctrl   = StartMode::Off;
+    StartMode   chassis_ctrl    = StartMode::On;
 };
 
 }

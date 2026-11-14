@@ -17,7 +17,7 @@ namespace topic::imu_to {
 
 struct Message
 {
-    uint32_t timestamp = 0;     // 发布时刻 k_uptime_get_32()，订阅方据此判断数据是否仍在更新
+    uint32_t version = 0;       // 帧序号，每解算一帧自增，订阅方据此判断数据是否仍在更新
 
     float quaternion[4] = {1.0f, 0.0f, 0.0f, 0.0f};
     float gyro[3]       = {0.0f, 0.0f, 0.0f};

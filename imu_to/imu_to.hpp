@@ -21,6 +21,7 @@ struct Message
 
     float quaternion[4] = {1.0f, 0.0f, 0.0f, 0.0f};
     float gyro[3]       = {0.0f, 0.0f, 0.0f};
+    float accel[3]      = {0.0f, 0.0f, 0.0f};
 
     float temperature = 0.0f;
     float roll        = 0.0f;

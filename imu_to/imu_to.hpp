@@ -1,9 +1,9 @@
 /**
  * @file imu_to.hpp
  * @author qingyu
- * @brief 
- * @version 0.1
- * @date 2026-06-02
+ * @brief
+ * @version 0.2
+ * @date 2026-11-13
  * 
  * @copyright Copyright (c) 2026
  * 
@@ -17,6 +17,8 @@ namespace topic::imu_to {
 
 struct Message
 {
+    uint32_t timestamp = 0;     // 发布时刻 k_uptime_get_32()，订阅方据此判断数据是否仍在更新
+
     float quaternion[4] = {1.0f, 0.0f, 0.0f, 0.0f};
     float gyro[3]       = {0.0f, 0.0f, 0.0f};
 

@@ -38,13 +38,13 @@ struct Message
 {
     uint32_t version = 0;
 
-    /* 语义字段（归一化 [-1, 1]） */
+    // 语义字段（归一化 [-1, 1]）
     float chassisx = 0.0f;
     float chassisy = 0.0f;
     float yaw      = 0.0f;
     float pitch    = 0.0f;
 
-    /* 模式标志 */
+    // 模式标志
     ChassisMode chassis_mode    = ChassisMode::Normal;
 
     StartMode   shoot_ctrl      = StartMode::Off;
@@ -52,6 +52,13 @@ struct Message
     StartMode   autoaim_ctrl    = StartMode::Off;
     StartMode   supercap_ctrl   = StartMode::Off;
     StartMode   robot_ctrl      = StartMode::On;	// 整车总开关
+
+    // 自定义字段
+    StartMode   custom1         = StartMode::Off;
+    StartMode   custom2         = StartMode::Off;
+    StartMode   custom3         = StartMode::Off;
+    StartMode   custom4         = StartMode::Off;
+    StartMode   custom5         = StartMode::Off;
 };
 
 }

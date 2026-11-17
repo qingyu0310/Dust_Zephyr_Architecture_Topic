@@ -28,14 +28,6 @@ struct Message
     float pitch       = 0.0f;
     float yaw         = 0.0f;
     float yaw_total   = 0.0f;
-
-    /* 滤波器内部状态，供诊断 */
-    float bg[1]       = {0.0f};			// 陀螺 yaw 零偏 (rad/s)
-    float chi2        = 0.0f;			// 卡方检验值
-    float k_scale     = 1.0f;			// 增益缩放
-    float w_norm      = 0.0f;			// 角速度幅值 (rad/s)
-    float a_norm      = 0.0f;			// 加速度幅值 (m/s^2)
-    bool  stable      = false;			// 静止判定
 };
 
 } // namespace topic::imu_to

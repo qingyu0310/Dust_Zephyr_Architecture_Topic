@@ -1,9 +1,9 @@
 /**
  * @file remote_to.hpp
  * @author qingyu
- * @brief 
- * @version 0.1
- * @date 2026-06-09
+ * @brief
+ * @version 0.2
+ * @date 2026-11-25
  * 
  * @copyright Copyright (c) 2026
  * 
@@ -34,9 +34,10 @@ struct Channel
     float pitch    = 0.0f, yaw      = 0.0f;
 };
 
-struct Message 
+struct Message
 {
-    uint32_t version = 0;
+    uint32_t version   = 0;
+    uint32_t sample_us = 0;     // 采样时刻，MCU 本地 µs（32 位，比较用模差）
 
     // 语义字段（归一化 [-1, 1]）
     float chassisx = 0.0f;
